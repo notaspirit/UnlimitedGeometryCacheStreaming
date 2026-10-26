@@ -14,6 +14,11 @@ void UnlimitedGeometryCacheStreaming::UnlimitedGeometryCacheStreaming::OnGeoCach
     RED4ext::GetParameter(aFrame, &geoCache);
     aFrame->code++;
 
+    if (!geoCache)
+    {
+        return;
+    }
+
     for (auto& sector: geoCache->sectorEntries)
     {
         sector.sectorBounds.Min.W = 0;
