@@ -66,7 +66,7 @@ namespace UnlimitedGeometryCacheStreaming
     {
         aInfo->name = L"UnlimitedGeometryCacheStreamingNative";
         aInfo->author = L"sprt_";
-        aInfo->version = RED4EXT_V1_SEMVER(1, 0, 0);
+        aInfo->version = RED4EXT_V1_SEMVER(1, 0, 1);
         aInfo->runtime = RED4EXT_V1_RUNTIME_VERSION_INDEPENDENT;
         aInfo->sdk = RED4EXT_V1_SDK_VERSION_CURRENT;
     }
