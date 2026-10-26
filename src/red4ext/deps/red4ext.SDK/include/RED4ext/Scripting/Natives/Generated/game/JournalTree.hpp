@@ -6,7 +6,7 @@
 
 #include <cstdint>
 #include <RED4ext/Common.hpp>
-#include <RED4ext/DynArray.hpp>
+#include <RED4ext/Containers/DynArray.hpp>
 #include <RED4ext/Handle.hpp>
 #include <RED4ext/ISerializable.hpp>
 
@@ -21,11 +21,11 @@ struct JournalTree : ISerializable
     static constexpr const char* NAME = "gameJournalTree";
     static constexpr const char* ALIAS = NAME;
 
-    uint8_t unk30[0x58 - 0x30]; // 30
-    DynArray<Handle<game::JournalRootFolderEntry>> rootEntries; // 58
-    uint8_t unk68[0xC8 - 0x68]; // 68
+    uint8_t unk30[0x78 - 0x30]; // 30
+    DynArray<Handle<game::JournalRootFolderEntry>> rootEntries; // 78
+    uint8_t unk88[0x148 - 0x88]; // 88
 };
-RED4EXT_ASSERT_SIZE(JournalTree, 0xC8);
+RED4EXT_ASSERT_SIZE(JournalTree, 0x148);
 } // namespace game
 using gameJournalTree = game::JournalTree;
 } // namespace RED4ext

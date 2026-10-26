@@ -8,14 +8,14 @@
 
 namespace RED4ext
 {
-RED4EXT_ASSERT_SIZE(CMesh, 0x230);
+RED4EXT_ASSERT_SIZE(CMesh, 0x220);
 } // namespace RED4ext
 
 /*
 #include <cstdint>
 #include <RED4ext/Common.hpp>
 #include <RED4ext/CName.hpp>
-#include <RED4ext/DynArray.hpp>
+#include <RED4ext/Containers/DynArray.hpp>
 #include <RED4ext/Handle.hpp>
 #include <RED4ext/NativeTypes.hpp>
 #include <RED4ext/Scripting/Natives/Generated/Box.hpp>
@@ -69,9 +69,9 @@ struct __declspec(align(0x10)) CMesh : res::StreamedResource
     bool isPlayerShadowMesh; // 20B
     uint8_t unk20C[0x219 - 0x20C]; // 20C
     ERenderObjectType objectType; // 219
-    uint8_t unk21A[0x230 - 0x21A]; // 21A
+    uint8_t unk21A[0x220 - 0x21A]; // 21A
 };
-RED4EXT_ASSERT_SIZE(CMesh, 0x230);
+RED4EXT_ASSERT_SIZE(CMesh, 0x220);
 } // namespace RED4ext
 */
 
